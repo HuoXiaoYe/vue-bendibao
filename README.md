@@ -1,6 +1,6 @@
 # app-bendibao
 
-> A Vue.js project
+> 基于微信小程序 `本地宝` 做的一个vue项目
 
 ## Build Setup
 
