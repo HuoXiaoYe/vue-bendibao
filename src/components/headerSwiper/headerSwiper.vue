@@ -1,11 +1,14 @@
 <template>
-	<div class="swiper-container" v-if='bannerList.length>0'>
-		<swiper :options="swiperOption" ref="mySwiper">
-			<swiper-slide v-for="item of bannerList" :key="item.id"><img :src="item.image"></swiper-slide>
-			<div class="swiper-pagination" slot="pagination"></div>
-			<!-- <div class="swiper-scrollbar" slot="scrollbar"></div> -->
-		</swiper>
+	<div class="swiper-container">
+		<div v-if='bannerList.length>0'>
+			<swiper :options="swiperOption" ref="mySwiper">
+				<swiper-slide v-for="item of bannerList" :key="item.id"><img :src="item.image"></swiper-slide>
+				<div class="swiper-pagination" slot="pagination"></div>
+				<!-- <div class="swiper-scrollbar" slot="scrollbar"></div> -->
+			</swiper>
+		</div>
 	</div>
+
 </template>
 
 <script>
@@ -40,9 +43,11 @@
 </script>
 
 <style>
-	.swiper-container{
+	.swiper-container {
 		height: 4rem;
+		background-color: #f3f5f7;
 	}
+
 	.swiper-container img {
 		width: 100%;
 		height: 4rem;
